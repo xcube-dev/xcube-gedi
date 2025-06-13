@@ -12,7 +12,7 @@ that enables access to datasets hosted by the
 The data store is called `"gedidb"` and implemented as
 an [xcube plugin](https://xcube.readthedocs.io/en/latest/plugins.html).
 It uses the [gedidb](https://gedidb.readthedocs.io/en/latest/)
-package under the hood.
+package, which is licensed under the [European Union Public License v1.2](https://github.com/simonbesnard1/gedidb/blob/main/LICENSE).
 
 ## Setup
 
@@ -33,14 +33,15 @@ This sets up a new conda environment, installs all the dependencies required
 for `xcube-gedidb`, and then installs `xcube-gedidb` directly from the repository
 into the environment.
 
-### Installing the `xcube-gedidb` plugin from the conda-forge
+### Installing the `xcube-gedidb` plugin from the PyPi
 
-This method assumes that you have an existing environment, and you want to
-install `xcube-gedidb` into it.
+This method assumes that you have an existing environment created from the 
+[environment.yml](https://github.com/xcube-dev/xcube-gedidb/blob/main/environment.yml),
+and you want to install `xcube-gedidb` into it.
 With the existing environment activated, execute this command:
 
 ```bash
-mamba install --channel conda-forge xcube-gedidb
+pip install xcube-gedi
 ```
 
 If xcube and any other necessary dependencies are not already installed, they
